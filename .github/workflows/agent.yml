@@ -71,7 +71,7 @@ jobs:
           args: build --single-target --clean --snapshot
 
       - name: Build
-        if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
+        #if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
         uses: goreleaser/goreleaser-action@v6
         with:
           distribution: goreleaser
