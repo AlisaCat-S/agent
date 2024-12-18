@@ -51,6 +51,7 @@ jobs:
       GOOS: ${{ matrix.goos }}
       GOARCH: ${{ matrix.goarch }}
       GOMIPS: ${{ matrix.gomips }}
+      GOARM: 5
     steps:
       - uses: actions/checkout@v4
         with:
